@@ -1,7 +1,7 @@
 #include <LiquidCrystal.h>
 #include <Keypad.h>
 
-int timer = 10; // seconds
+int timer = 180; // seconds
 
 int currentTimer;
 unsigned long previousMillis = 0;
@@ -10,7 +10,7 @@ String guessedPassword = "";
 boolean bombIsActive = false;
 boolean bombExploded = false;
 unsigned long bombActivatedMillis = 0;
-long interval = 1000; // miliseconds
+int interval = 1000; // miliseconds
 
 // buzzer pin
 int buzzer = 4;
